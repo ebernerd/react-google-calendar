@@ -1,4 +1,5 @@
 import { Moment } from 'moment-timezone';
+import { FC } from 'react';
 
 export interface CalendarProps {
   apiKey: string;
@@ -28,3 +29,6 @@ export interface CalendarState {
   showFooter: boolean;
   processedCalendars: string[];
 }
+
+declare const CalendarComponent: FC<CalendarProps>
+export default CalendarComponent
